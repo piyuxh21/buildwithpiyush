@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush's Meme Collection - BuildWithPiyush</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .meme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .meme-card {
+            background: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .meme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .meme-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+        
+        .meme-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .meme-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .meme-category {
+            display: inline-block;
+            background: #27939b;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .meme-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .back-btn {
+                top: 10px;
+                right: 10px;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-btn" onclick="window.close()">← Back</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🎭 Piyush's Meme Collection 🎭</h1>
+            <p>My favorite programming and tech memes that never fail to make me laugh!</p>
+        </div>
+        
+        <div class="meme-grid">
+            <!-- Programming Memes -->
+            <div class="meme-card">
+                <span class="meme-category">Programming</span>
+                <img src="https://i.imgflip.com/2zo1ki.jpg" alt="Bug Fix Meme">
+                <h3>The Bug Fix Victory</h3>
+                <p>When you finally fix that bug that's been bothering you for hours! Every developer's favorite feeling.</p>
+            </div>
+            
+            <div class="meme-card">
+                <span class="meme-category">Programming</span>
+                <img src="https://i.imgflip.com/30b1gx.jpg" alt="Code Works Meme">
+                <h3>It Works on My Machine</h3>
+                <p>The classic developer excuse when code works perfectly on your machine but fails everywhere else.</p>
+            </div>
+            
+            <div class="meme-card">
+                <span class="meme-category">Programming</span>
+                <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Debugging Meme">
+                <h3>Debugging Life</h3>
+                <p>When you're trying to debug your code but end up debugging your entire life instead.</p>
+            </div>
+            
+            <!-- Tech Memes -->
+            <div class="meme-card">
+                <span class="meme-category">Tech</span>
+                <img src="https://i.imgflip.com/26am.jpg" alt="Stack Overflow Meme">
+                <h3>Stack Overflow Hero</h3>
+                <p>Every developer's best friend. Where would we be without Stack Overflow?</p>
+            </div>
+            
+            <div class="meme-card">
+                <span class="meme-category">Tech</span>
+                <img src="https://i.imgflip.com/1bij.jpg" alt="Semicolon Meme">
+                <h3>The Missing Semicolon</h3>
+                <p>When your entire application breaks because of one missing semicolon. Classic!</p>
+            </div>
+            
+            <div class="meme-card">
+                <span class="meme-category">Web Dev</span>
+                <img src="https://i.imgflip.com/1otk96.jpg" alt="CSS Meme">
+                <h3>CSS Magic</h3>
+                <p>When your CSS finally works but you have no idea why. Don't touch it, it's perfect!</p>
+            </div>
+            
+            <!-- Add more memes as needed -->
+            <div class="meme-card">
+                <span class="meme-category">Life</span>
+                <img src="https://i.imgflip.com/1g8my4.jpg" alt="Productivity Meme">
+                <h3>Productivity Cycle</h3>
+                <p>The endless cycle of planning to be productive vs actually being productive.</p>
+            </div>
+            
+            <div class="meme-card">
+                <span class="meme-category">Programming</span>
+                <img src="https://i.imgflip.com/2wifvo.jpg" alt="GitHub Commits Meme">
+                <h3>GitHub Commits</h3>
+                <p>When you see your GitHub contribution graph and realize you haven't committed anything in weeks.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 BuildWithPiyush | These memes keep me motivated while coding! 😄</p>
+        </div>
+    </div>
+</body>
+</html>
