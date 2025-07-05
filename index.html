@@ -2,22 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Piyush Sharma - Full Stack Developer & Tech Enthusiast. Building clean, functional web applications with modern technologies." />
-    <meta name="keywords" content="Full Stack Developer, Web Development, React, Python, JavaScript, HTML, CSS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta
+      name="description"
+      content="Piyush Sharma - Full Stack Developer & Tech Enthusiast. Building clean, functional web applications with modern technologies."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Web Development, React, Python, JavaScript, HTML, CSS"
+    />
     <meta name="author" content="Piyush Sharma" />
+
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="IMG_20250310_195623.jpg" as="image">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Piyush Sharma - Full Stack Developer" />
-    <meta property="og:description" content="Full Stack Developer & Tech Enthusiast. Building clean, functional web applications with modern technologies." />
+    <meta
+      property="og:description"
+      content="Full Stack Developer & Tech Enthusiast. Building clean, functional web applications with modern technologies."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://buildwithpiyush.in" />
-    <meta property="og:image" content="https://buildwithpiyush.in/og-image.jpg" />
+    <meta
+      property="og:image"
+      content="https://buildwithpiyush.in/og-image.jpg"
+    />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Piyush Sharma - Full Stack Developer" />
-    <meta name="twitter:description" content="Full Stack Developer & Tech Enthusiast. Building clean, functional web applications." />
+    <meta
+      name="twitter:description"
+      content="Full Stack Developer & Tech Enthusiast. Building clean, functional web applications."
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -60,7 +82,11 @@
       <div class="nav-container">
         <div class="nav-logo">
           <a href="#" aria-label="BuildWithPiyush Home">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50'%3E%3Ctext x='10' y='35' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='%2327939b'%3EBuildWithPiyush%3C/text%3E%3C/svg%3E" alt="BuildWithPiyush Logo" class="logo-img">
+            <img
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50'%3E%3Ctext x='10' y='35' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='%2327939b'%3EBuildWithPiyush%3C/text%3E%3C/svg%3E"
+              alt="BuildWithPiyush Logo"
+              class="logo-img"
+            />
           </a>
         </div>
         <div class="nav-menu" id="nav-menu">
@@ -70,7 +96,11 @@
           <a href="#Contact" class="nav-link">Contact</a>
         </div>
         <div class="nav-actions">
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
             <i class="fas fa-moon" id="theme-icon"></i>
           </button>
           <div class="nav-toggle" id="nav-toggle">
@@ -82,7 +112,7 @@
       </div>
     </nav>
 
-    <main id="main-section">
+    <main id="main-section" role="main">
       <!-- Hero Section -->
       <section class="hero" aria-label="Introduction">
         <div class="hero-left">
@@ -90,7 +120,12 @@
           <h1 id="easter-egg-trigger"><span>Piyush Sharma</span></h1>
           <p><span>Full Stack Developer | Tech Enthusiast</span></p>
           <p><span>I build clean, functional web applications</span></p>
-          <a href="https://www.example.com/files/my_document.pdf" class="download-button" download aria-label="Download Resume PDF">
+          <a
+            href="https://www.example.com/files/my_document.pdf"
+            class="download-button"
+            download
+            aria-label="Download Resume PDF"
+          >
             <i class="fas fa-file-pdf" aria-hidden="true"></i>
             Download Resume
           </a>
@@ -101,18 +136,38 @@
           <div class="easter-egg-content">
             <div class="easter-egg-header">
               <h3>🎭 Random Meme Drop! 🎭</h3>
-              <button id="close-easter-egg" class="close-btn" aria-label="Close Easter Egg">×</button>
+              <button
+                id="close-easter-egg"
+                class="close-btn"
+                aria-label="Close Easter Egg"
+              >
+                ×
+              </button>
             </div>
             <div class="meme-container">
-              <div class="meme-counter" id="meme-counter">🎭 Meme #<span id="meme-number">1</span> unlocked</div>
-              <img id="random-meme-img" src="" alt="Random Programming Meme" class="random-meme-image">
+              <div class="meme-counter" id="meme-counter">
+                🎭 Meme #<span id="meme-number">1</span> unlocked
+              </div>
+              <img
+                id="random-meme-img"
+                src=""
+                alt="Random Programming Meme"
+                class="random-meme-image"
+                loading="lazy"
+              />
               <div class="meme-caption">🤣 Meme drop by Piyush Sharma</div>
               <div class="sparkle-container" id="sparkle-container"></div>
             </div>
           </div>
         </div>
         <div class="hero-right">
-          <img src="IMG_20250310_195623.jpg" alt="Piyush Sharma - Full Stack Developer working on projects">
+          <img
+            src="IMG_20250310_195623.jpg"
+            alt="Piyush Sharma - Full Stack Developer working on projects"
+            loading="eager"
+            width="400"
+            height="400"
+          />
         </div>
       </section>
 
@@ -122,9 +177,18 @@
           <div class="about-text">
             <h2>About Me</h2>
             <p>
-              <span>I'm a B.Tech Computer Science student passionate about creating innovative solutions through code.<br /></span>
-              <span>My expertise spans across full-stack web development, AI integration, and building user-centric applications.<br /></span>
-              <span>I love turning complex problems into simple, elegant solutions that make a real difference.</span>
+              <span
+                >I'm a B.Tech Computer Science student passionate about creating
+                innovative solutions through code.<br
+              /></span>
+              <span
+                >My expertise spans across full-stack web development, AI
+                integration, and building user-centric applications.<br
+              /></span>
+              <span
+                >I love turning complex problems into simple, elegant solutions
+                that make a real difference.</span
+              >
             </p>
 
             <div class="about-stats">
@@ -142,135 +206,49 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="skills-section">
-            <h3>Technical Expertise</h3>
-            <div class="skills-grid">
-              <div class="skill-category">
-                <h4><i class="fas fa-code"></i> Frontend Development</h4>
-                <div class="skills-list">
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-html5"></i>
-                        HTML5 & Semantic Markup
-                      </span>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="90"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-css3-alt"></i>
-                        CSS3 & Responsive Design
-                      </span>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-js-square"></i>
-                        JavaScript ES6+
-                      </span>
-                      <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-react"></i>
-                        React & Frontend Libraries
-                      </span>
-                      <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="70"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-category">
-                <h4><i class="fas fa-server"></i> Backend Development</h4>
-                <div class="skills-list">
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-python"></i>
-                        Python & Django
-                      </span>
-                      <span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="75"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-node-js"></i>
-                        Node.js & Express
-                      </span>
-                      <span class="skill-percentage">65%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="65"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fas fa-database"></i>
-                        Database Design (SQL/NoSQL)
-                      </span>
-                      <span class="skill-percentage">60%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="60"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-category">
-                <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
-                <div class="skills-list">
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fab fa-git-alt"></i>
-                        Git & Version Control
-                      </span>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item" role="listitem">
-                    <div class="skill-info">
-                      <span class="skill-name">
-                        <i class="fas fa-robot"></i>
-                        AI/ML Integration
-                      </span>
-                      <span class="skill-percentage">55%</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-progress="55"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <!-- Modern Skills Section: Full Stack Developer Skills -->
+      <section id="skills-modern" aria-label="Skills">
+        <div class="skills-modern-inner">
+          <h2 class="section-title">Full Stack Developer Skills</h2>
+          <div class="skills-modern-grid">
+            <div class="skill-row" tabindex="0">
+              <span class="skill-label">HTML5</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:95%"></div><span class="skill-dot" style="left:95%"></span></div>
+              <span class="skill-percent">95%</span>
+              <div class="skill-expand">Semantic Markup, Accessibility, SEO</div>
+            </div>
+            <div class="skill-row" tabindex="0">
+              <span class="skill-label">CSS3</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:90%"></div><span class="skill-dot" style="left:90%"></span></div>
+              <span class="skill-percent">90%</span>
+              <div class="skill-expand">Flexbox, Grid, Responsive Design, SASS</div>
+            </div>
+            <div class="skill-row" tabindex="0">
+              <span class="skill-label">JavaScript (ES6+)</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:88%"></div><span class="skill-dot" style="left:88%"></span></div>
+              <span class="skill-percent">88%</span>
+              <div class="skill-expand">ES6+, DOM, Fetch API, Async/Await</div>
+            </div>
+            <div class="skill-row" tabindex="0">
+              <span class="skill-label">React</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:85%"></div><span class="skill-dot" style="left:85%"></span></div>
+              <span class="skill-percent">85%</span>
+              <div class="skill-expand">Hooks, Context API, Redux, SPA</div>
+            </div>
+            <div class="skill-row" tabindex="0">
+              <span class="skill-label">Node.js</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:80%"></div><span class="skill-dot" style="left:80%"></span></div>
+              <span class="skill-percent">80%</span>
+              <div class="skill-expand">Express.js, REST APIs, Middleware</div>
+            </div>
+            <div class="skill-row" tabindex="0">
+              <span class="skill-label">Express.js</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:78%"></div><span class="skill-dot" style="left:78%"></span></div>
+              <span class="skill-percent">78%</span>
+              <div class="skill-expand">Routing, Middleware, JWT Auth</div>
             </div>
           </div>
         </div>
@@ -281,48 +259,108 @@
         <h2>Projects</h2>
         <div class="cards">
           <article class="card">
-            <img src="speeking.jpeg" alt="English Speaking App Interface">
-            <h3>English Speaking App</h3>
-            <p>An interactive application to improve English speaking skills with real-time feedback and pronunciation analysis.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/username/english-speaking-app" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                Check Out
-              </a>
-              <button class="code-button" onclick="window.open('https://github.com/username/english-speaking-app', '_blank')">
-                <i class="fas fa-code" aria-hidden="true"></i>
-                View Code
-              </button>
+            <img src="speeking.jpeg" alt="English Speaking App Interface" />
+            <div class="card-content">
+              <h3>English Speaking App</h3>
+              <p>
+                An interactive application to improve English speaking skills with
+                real-time feedback and pronunciation analysis using advanced AI algorithms.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AI/ML</span>
+              </div>
+              <div class="card-buttons">
+                <a
+                  href="https://github.com/username/english-speaking-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View English Speaking App Live Demo"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+                <button
+                  class="code-button"
+                  onclick="window.open('https://github.com/username/english-speaking-app', '_blank')"
+                  aria-label="View English Speaking App Source Code"
+                >
+                  <i class="fas fa-code" aria-hidden="true"></i>
+                  Source Code
+                </button>
+              </div>
             </div>
           </article>
           <article class="card">
-            <img src="ngo.jpeg" alt="NGO Management System Dashboard">
-            <h3>NGO Management System</h3>
-            <p>A comprehensive platform for NGOs to manage volunteers, donations, and events efficiently.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/username/ngo-management" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                Check Out
-              </a>
-              <button class="code-button" onclick="window.open('https://github.com/username/ngo-management', '_blank')">
-                <i class="fas fa-code" aria-hidden="true"></i>
-                View Code
-              </button>
+            <img src="ngo.jpeg" alt="NGO Management System Dashboard" />
+            <div class="card-content">
+              <h3>NGO Management System</h3>
+              <p>
+                A comprehensive platform for NGOs to manage volunteers, donations,
+                and events efficiently with real-time analytics and reporting.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">JWT Auth</span>
+              </div>
+              <div class="card-buttons">
+                <a
+                  href="https://github.com/username/ngo-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View NGO Management System Live Demo"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+                <button
+                  class="code-button"
+                  onclick="window.open('https://github.com/username/ngo-management', '_blank')"
+                  aria-label="View NGO Management System Source Code"
+                >
+                  <i class="fas fa-code" aria-hidden="true"></i>
+                  Source Code
+                </button>
+              </div>
             </div>
           </article>
           <article class="card">
-            <img src="paytm.png" alt="Payment Gateway Clone Interface">
-            <h3>Payment Gateway Clone</h3>
-            <p>A secure payment processing system clone with modern UI and robust transaction handling.</p>
-            <div class="card-buttons">
-              <a href="https://github.com/username/payment-gateway-clone" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                Check Out
-              </a>
-              <button class="code-button" onclick="window.open('https://github.com/username/payment-gateway-clone', '_blank')">
-                <i class="fas fa-code" aria-hidden="true"></i>
-                View Code
-              </button>
+            <img src="paytm.png" alt="Payment Gateway Clone Interface" />
+            <div class="card-content">
+              <h3>Payment Gateway Clone</h3>
+              <p>
+                A secure payment processing system clone with modern UI and robust
+                transaction handling, featuring real-time payment status tracking.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">WebSocket</span>
+              </div>
+              <div class="card-buttons">
+                <a
+                  href="https://github.com/username/payment-gateway-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Payment Gateway Clone Live Demo"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+                <button
+                  class="code-button"
+                  onclick="window.open('https://github.com/username/payment-gateway-clone', '_blank')"
+                  aria-label="View Payment Gateway Clone Source Code"
+                >
+                  <i class="fas fa-code" aria-hidden="true"></i>
+                  Source Code
+                </button>
+              </div>
             </div>
           </article>
         </div>
@@ -330,72 +368,68 @@
     </main>
 
     <!-- Footer -->
-    <footer role="contentinfo">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>BuildWithPiyush</h3>
-          <p>Full Stack Developer crafting digital solutions</p>
+    <footer role="contentinfo" aria-label="Footer">
+      <div class="footer-inner">
+        <div class="footer-contact-col">
+          <h2 class="footer-contact-title" style="font-family: 'Jura', sans-serif;">Get In Touch</h2>
+          <div class="footer-contact-info">
+            <a href="mailto:Piyush21@gmail.com" aria-label="Email" style="font-family: 'Roboto', sans-serif;">
+              <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+              <span>Piyush21@gmail.com</span>
+            </a>
+            <a href="tel:+918755200081" aria-label="Phone" style="font-family: 'Roboto', sans-serif;">
+              <i class="fas fa-phone-alt" style="color: var(--primary-color);"></i>
+              <span>+91 87552XXX81</span>
+            </a>
+          </div>
+          <div class="footer-social-row" aria-label="Social Media Links">
+            <a href="https://www.facebook.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="font-family: 'Roboto', sans-serif;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="font-family: 'Roboto', sans-serif;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/piyush" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="font-family: 'Roboto', sans-serif;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.github.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="font-family: 'Roboto', sans-serif;"><i class="fab fa-github"></i></a>
+          </div>
         </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#main-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Connect With Me</h4>
-          <nav id="social-media" aria-label="Social Media Links">
-            <a href="https://www.facebook.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.github.com/piyush" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/piyush" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </nav>
-        </div>
-        <div class="footer-section" id="Contact">
-          <h4>Get In Touch</h4>
-          <form class="contact-form" id="contactForm">
+        <div class="footer-form-col">
+          <form class="contact-form" id="contactForm" name="submit-to-google-sheet" aria-label="Contact Form">
             <div class="form-group">
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Full Name"
+                required
+                style="font-family: 'Roboto', sans-serif;"
+                aria-label="Your Name"
+              />
             </div>
             <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email Address"
+                required
+                style="font-family: 'Roboto', sans-serif;"
+                aria-label="Your Email"
+              />
             </div>
             <div class="form-group">
-              <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message (Tell me about your project)"
+                rows="4"
+                required
+                style="font-family: 'Roboto', sans-serif;"
+                aria-label="Your Message"
+              ></textarea>
             </div>
-            <button type="submit" class="submit-btn">
+            <button type="submit" class="submit-btn" style="font-family: 'Roboto', sans-serif;">
               <i class="fas fa-paper-plane"></i>
               Send Message
             </button>
           </form>
-          <div class="contact-info">
-            <address>
-              <a href="tel:+918755200081" aria-label="Phone Number">
-                <i class="fas fa-phone"></i> 87552XXX81
-              </a>
-              <a href="mailto:Piyush21@gmail.com" aria-label="Email Address">
-                <i class="fas fa-envelope"></i> Piyush21@gmail.com
-              </a>
-            </address>
-          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; Copyright All Rights Reserved 2025 | BuildWithPiyush</p>
       </div>
     </footer>
 
@@ -458,5 +492,17 @@
         });
       });
     </script>
+    <!-- <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyrGV1oRRSqoFu59fOZaCj3rtqq9zUeEn__LgWlOUzbOBi_MERhGRDYLSTzz-6gvXDY-w/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
   </body>
 </html>
