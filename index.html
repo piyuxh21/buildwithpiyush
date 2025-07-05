@@ -405,5 +405,58 @@
     </button>
 
     <script src="script.js"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyrGV1oRRSqoFu59fOZaCj3rtqq9zUeEn__LgWlOUzbOBi_MERhGRDYLSTzz-6gvXDY-w/exec";
+      const contactForm = document.getElementById('contactForm');
+
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+
+        // Basic validation
+        if (name.length < 2) {
+          alert('Name must be at least 2 characters long');
+          return;
+        }
+
+        if (!email.includes('@')) {
+          alert('Please enter a valid email address');
+          return;
+        }
+
+        if (message.length < 10) {
+          alert('Message must be at least 10 characters long');
+          return;
+        }
+
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+
+        // Submit to Google Sheets
+        fetch(scriptURL, { 
+          method: "POST", 
+          body: formData 
+        })
+        .then((response) => {
+          console.log("Success!", response);
+          alert('Thank you for your message! I\'ll get back to you soon.');
+          contactForm.reset();
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+        })
+        .catch((error) => {
+          console.error("Error!", error.message);
+          alert('Error submitting form. Please try again.');
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+        });
+      });
+    </script>
   </body>
 </html>
